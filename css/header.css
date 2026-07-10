@@ -1,0 +1,58 @@
+.header-container {
+  background: linear-gradient(90deg, #1a202c 50%, #0b0f19 80%);
+  width: 100%;
+  animation: slideDown 0.7s ease-out forwards;
+}
+
+.header {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 0;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: var(--element-2);
+}
+
+.header ul a {
+  padding: 20px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.header a {
+  color: var(--element-2);
+  transition:
+    color 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.header a:hover {
+  color: var(--hover);
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .header ul {
+    justify-content: center;
+    gap: 12px 8px;
+  }
+
+  .header a {
+    padding: 10 16px;
+    display: inline-block;
+    font-size: 0.9rem;
+  }
+}

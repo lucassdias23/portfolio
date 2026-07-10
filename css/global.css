@@ -1,0 +1,76 @@
+:root {
+  --background-1: #0b0f19;
+  --background-2: #121824;
+  --footer-bg: #11141a;
+  --header-bg: #1a202c;
+  --title-1: #edf2f7;
+  --title-2: #f7fafc;
+  --text-1: #a0aec0;
+  --text-2: #cbd5e0;
+  --border: #2d3748;
+  --hover: #4a5568;
+  --element-1: #3b82f6;
+  --element-2: #e2e8f0;
+  --shadow: #1a202c;
+  --gradient: linear-gradient(#718096, #4a5568);
+  --btn-text: #0b0f19;
+  --btn-bg: #edf2f7;
+  --btn-hover: #cbd5e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background-1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFoto {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
