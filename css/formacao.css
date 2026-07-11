@@ -20,10 +20,9 @@
   background: transparent;
   border-radius: 4px;
   padding: 40px;
+  border-left: 3px solid transparent;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.35);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: all 0.3s ease;
   position: relative;
   animation: slideUp 0.8s ease-out backwards;
   animation-delay: 0.4s;
@@ -31,9 +30,8 @@
 
 .card-formacao-titulo:hover {
   transform: translateY(-5px);
-  box-shadow:
-    0px 12px 40px rgba(0, 0, 0, 0.5),
-    0px 0px 0px 1px var(--element-1);
+  border-left-color: var(--element-1);
+  box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.15);
 }
 
 .card-formacao-titulo h1 {
@@ -46,16 +44,6 @@
 
 .card-formacao-titulo h1 span {
   color: var(--element-1);
-}
-
-.card-formacao-titulo h1::after {
-  content: "";
-  background: var(--gradient);
-  height: 35px;
-  width: 4px;
-  top: 52px;
-  left: -4px;
-  position: absolute;
 }
 
 .card-formacao-titulo p {
@@ -71,11 +59,10 @@
   border-radius: 4px;
   padding: 40px;
   position: relative;
+  border-left: 3px solid transparent;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.35);
   margin-bottom: 40px;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: all 0.3s ease;
   align-self: flex-start;
   width: 100%;
   animation: slideUp 0.8s ease-out backwards;
@@ -84,9 +71,8 @@
 
 .card-faculdade:hover {
   transform: translateY(-5px);
-  box-shadow:
-    0px 12px 40px rgba(0, 0, 0, 0.5),
-    0px 0px 0px 1px var(--element-1);
+  border-left-color: var(--element-1);
+  box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.15);
 }
 
 .card-faculdade h2 {
@@ -97,16 +83,6 @@
   margin-top: 16px;
   margin-bottom: 24px;
   position: relative;
-}
-
-.card-faculdade h2::after {
-  content: "";
-  background: var(--gradient);
-  height: 20px;
-  width: 4px;
-  top: 5px;
-  left: -44px;
-  position: absolute;
 }
 
 .card-faculdade h2 span {
@@ -135,19 +111,27 @@
   border-radius: 4px;
   padding: 40px;
   position: relative;
+  border-left: 3px solid transparent;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.35);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: all 0.3s ease;
   animation: slideUp 0.8s ease-out backwards;
   animation-delay: 0.8s;
 }
 
+.card-curso:nth-of-type(1) {
+  animation: slideUp 0.8s ease-out backwards;
+  animation-delay: 0.8s;
+}
+
+.card-curso:nth-of-type(2) {
+  animation: slideUp 0.8s ease-out backwards;
+  animation-delay: 1s;
+}
+
 .card-curso:hover {
   transform: translateY(-5px);
-  box-shadow:
-    0px 12px 40px rgba(0, 0, 0, 0.5),
-    0px 0px 0px 1px var(--element-1);
+  border-left-color: var(--element-1);
+  box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.15);
 }
 
 .card-curso h2 {
@@ -159,16 +143,6 @@
   margin-bottom: 32px;
   position: relative;
   min-height: 3.8rem;
-}
-
-.card-curso h2::after {
-  content: "";
-  background: var(--gradient);
-  height: 20px;
-  width: 4px;
-  top: 5px;
-  left: -44px;
-  position: absolute;
 }
 
 .card-curso h2 span {
@@ -319,7 +293,7 @@
 }
 
 .formacao-bg {
-  background: url("../img/formacao.jpg") no-repeat;
+  background: url("../img/backgrounds/formacao.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -343,16 +317,6 @@
   .card-faculdade,
   .card-curso {
     padding: 30px 24px;
-  }
-
-  .card-formacao-titulo h1::after {
-    left: -4px;
-    top: 42px;
-  }
-
-  .card-faculdade h2::after,
-  .card-curso h2::after {
-    left: -28px;
   }
 }
 

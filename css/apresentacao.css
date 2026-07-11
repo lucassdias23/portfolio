@@ -33,30 +33,18 @@
   background: var(--background-2);
   border-radius: 4px;
   padding: 40px;
+  border-left: 3px solid transparent;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.35);
   position: relative;
   animation: slideUp 0.8s ease-out backwards;
   animation-delay: 0.4s;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .card-titulo:hover {
   transform: translateY(-5px);
-  box-shadow:
-    0px 12px 40px rgba(0, 0, 0, 0.5),
-    0px 0px 0px 1px var(--element-1);
-}
-
-.card-titulo::after {
-  content: "";
-  background: var(--gradient);
-  height: 35px;
-  width: 4px;
-  top: 52px;
-  left: -4px;
-  position: absolute;
+  border-left-color: var(--element-1);
+  box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.15);
 }
 
 .card-titulo h1 {
@@ -127,16 +115,6 @@
   .textos-sobre {
     padding: 30px 10px;
   }
-
-  .card-titulo::after {
-    content: "";
-    background: var(--gradient);
-    height: 24px;
-    width: 4px;
-    top: 40px;
-    left: -4px;
-    position: absolute;
-  }
 }
 
 @media (max-width: 400px) {
@@ -147,15 +125,7 @@
   .textos-sobre p {
     text-align: justify;
   }
-  .card-titulo::after {
-    content: "";
-    background: var(--gradient);
-    height: 18px;
-    width: 4px;
-    top: 36px;
-    left: -4px;
-    position: absolute;
-  }
+
   .footer p {
     font-size: 0.825rem;
   }
