@@ -99,9 +99,10 @@
     border: solid var(--element-1);
   }
 
-  .container-apresentacao {
+  .container-cards {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 30px;
+    padding: 0;
   }
 
   .card-titulo {

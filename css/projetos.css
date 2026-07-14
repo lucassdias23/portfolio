@@ -111,13 +111,13 @@
 
 .status-tag.concluido {
   background-color: rgba(16, 185, 129, 0.15);
-  color: #10b981;
+  color: var(--done);
   border: 1px solid rgba(16, 185, 129, 0.3);
 }
 
 .status-tag.em-andamento {
   background-color: rgba(245, 158, 11, 0.15);
-  color: #f59e0b;
+  color: var(--in-course);
   border: 1px solid rgba(245, 158, 11, 0.3);
 }
 
@@ -163,16 +163,22 @@
 }
 
 .projeto-mini-thumb {
-  width: 100px;
+  width: 150px;
   flex-shrink: 0;
+  transition: transform 0.3s ease;
 }
 
 .projeto-mini-thumb img {
   width: 100%;
-  height: 66px;
+  height: 100px;
   border-radius: 4px;
   object-fit: cover;
-  object-position: top;
+  object-position: top center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card-projeto-item:hover .projeto-mini-thumb {
+  transform: scale(1.03);
 }
 
 .projeto-footer {
@@ -217,18 +223,55 @@
 }
 
 @media (max-width: 480px) {
+  .projetos {
+    padding: 60px 4% 40px 4%;
+    gap: 24px;
+  }
+
+  .card-projetos-introducao {
+    min-height: initial;
+    padding: 10px;
+  }
+
+  .card-projetos-introducao h1 {
+    margin-bottom: 24px;
+  }
+
   .card-projeto-item {
-    margin-top: 40px;
+    margin-top: 0;
+    padding: 20px;
+    min-height: initial;
   }
+
   .projeto-body {
+    display: flex !important;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    gap: 16px;
+    margin-bottom: 16px;
   }
+
   .projeto-mini-thumb {
-    width: 150px;
-    margin-top: 12px;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 0;
   }
+
+  .projeto-mini-thumb img {
+    width: 100% !important;
+    height: 160px !important;
+    object-fit: cover !important;
+    object-position: top center;
+    border-radius: 4px;
+  }
+
+  .projeto-mini-thumb img[src*="flexblog"] {
+    object-position: center !important;
+  }
+
   .projeto-footer {
     flex-direction: column;
+    gap: 8px;
+    margin-top: auto;
   }
 }

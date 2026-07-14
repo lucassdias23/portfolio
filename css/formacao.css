@@ -176,12 +176,12 @@
 
 .status-concluido {
   background: rgba(46, 213, 115, 0.12);
-  color: #2ed573;
+  color: var(--done);
 }
 
 .status-andamento {
   background: rgba(255, 165, 0, 0.12);
-  color: #ffa500;
+  color: var(--in-course);
 }
 
 .card-content {
@@ -317,6 +317,31 @@
   .card-faculdade,
   .card-curso {
     padding: 30px 24px;
+  }
+
+  .container-cursos {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .card-formacao-titulo,
+  .card-faculdade,
+  .card-curso {
+    padding: 30px 24px;
+  }
+
+  .card-curso h2 {
+    min-height: initial !important;
+    margin-bottom: 16px !important;
+  }
+
+  .stacks {
+    margin-bottom: 16px !important;
+  }
+
+  .origamid-credential,
+  .em-breve-credential {
+    margin-bottom: 16px !important;
   }
 }
 
