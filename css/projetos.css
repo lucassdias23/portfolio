@@ -121,6 +121,12 @@
   border: 1px solid rgba(245, 158, 11, 0.3);
 }
 
+.status-tag.em-breve {
+  background: rgba(148, 163, 184, 0.12);
+  color: var(--not-initialized);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
 .projeto-header h2 {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 600;
