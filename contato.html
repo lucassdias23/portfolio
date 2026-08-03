@@ -34,32 +34,47 @@
     </div>
   </header>
   <main class="contato-container">
-    <div class="contato-conteudo">
-      <section class="card-contato-titulo">
-        <h1>Contato<span>.</span></h1>
-        <p>Estou disponível para programas de estágios, trainee, e novos projetos. Entre em contato comigo, e marcamos uma conversa.</p>
-      </section>
-
-      <div class="contato-grid-links">
-
-        <a href="mailto:lucass.diass23@gmail.com" class="card-contato-acao">
-          <h2>Clique aqui<span>,</span></h2>
-          <p>e entre em contato comigo por <span>e-mail. <img src="./img/icones/email.svg" alt="Email"></span></p>
-        </a>
-
-        <div class="card-contato-acao">
+    <section class="contato-conteudo">
+      <div class="contato-topo-grid">
+        <div class="card-contato-titulo">
+          <h1>Contato<span>.</span></h1>
+          <p>Estou disponível para programas de estágios, trainee, e novos projetos. Entre em contato comigo, e marcamos uma conversa.</p>
+        </div>
+        <div class="card-contato-redes">
           <h2>Encontre-me<span>.</span></h2>
-          <p>também nas redes sociais.</p>
+          <p>nas redes sociais.</p>
           <div class="redes-sociais-icones">
-            <a href="https://linkedin.com/in/lucas-barbosadias" target="_blank"><img src="./img/icones/linkedin.svg" alt="LinkedIn"></a>
-            <a href="https://github.com/lucassdias23/" target="_blank"><img src="./img/icones/github.svg" alt="GitHub"></a>
-            <a href="https://wa.me/5511981119318" target="_blank"><img src="./img/icones/whatsapp.svg" alt="WhatsApp"></a>
+            <a href="https://linkedin.com/in/lucas-barbosadias" target="_blank" rel="noopener noreferrer">
+              <img src="./img/icones/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/lucassdias23/" target="_blank" rel="noopener noreferrer">
+              <img src="./img/icones/github.svg" alt="GitHub">
+            </a>
+            <a href="https://wa.me/5511981119318" target="_blank" rel="noopener noreferrer">
+              <img src="./img/icones/whatsapp.svg" alt="WhatsApp">
+            </a>
           </div>
         </div>
-
       </div>
-    </div>
-
+      <div class="card-contato-form">
+        <h2>Deixe sua mensagem<span>.</span></h2>
+        <form action="https://formspree.io/f/mdaqqrwa" method="POST" id="contato-form" class="form-contato">
+          <div class="form-grupo">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
+          </div>
+          <div class="form-grupo">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="seu@email.com" required>
+          </div>
+          <div class="form-grupo">
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" rows="3" placeholder="Escreva sua mensagem aqui..." required></textarea>
+          </div>
+          <button type="submit" class="btn-enviar">Enviar Mensagem 🚀</button>
+        </form>
+      </div>
+    </section>
     <div class="contato-container-img">
       <div class="contato-bg"></div>
     </div>
@@ -69,7 +84,7 @@
       <p>© 2026 - Lucas Dias. Todos os direitos reservados.</p>
     </div>
   </footer>
-  <script src="./js/script.js"></script>
+  <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

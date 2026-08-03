@@ -7,23 +7,31 @@
 }
 
 .container-cards-formacao {
-  padding: 0 20px 40px 20px;
+  padding: 120px 20px 40px 20px;
   display: flex;
   flex-direction: column;
+  gap: 40px;
+}
+
+.formacao-topo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: stretch;
 }
 
 .card-formacao-titulo {
-  margin-top: 120px;
-  margin-bottom: 40px;
   background: transparent;
   border-radius: 4px;
   padding: 40px;
   border-left: 3px solid transparent;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.35);
   transition: all 0.3s ease;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   animation: slideUp 0.8s ease-out backwards;
-  animation-delay: 0.4s;
+  animation-delay: 0.2s;
 }
 
 .card-formacao-titulo:hover {
@@ -37,7 +45,7 @@
   font-weight: 600;
   font-size: 2.5rem;
   color: var(--title-1);
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .card-formacao-titulo h1 span {
@@ -52,25 +60,19 @@
   text-transform: uppercase;
 }
 
-.container-faculdades {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  margin-bottom: 40px;
-}
-
 .card-faculdade {
   background: var(--background-2);
   border-radius: 4px;
   padding: 40px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-left: 3px solid transparent;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.35);
   transition: all 0.3s ease;
-  align-self: flex-start;
   width: 100%;
   animation: slideUp 0.8s ease-out backwards;
-  animation-delay: 0.6s;
+  animation-delay: 0.4s;
 }
 
 .card-faculdade:hover {
@@ -86,7 +88,6 @@
   color: var(--title-1);
   margin-top: 16px;
   margin-bottom: 24px;
-  position: relative;
 }
 
 .card-faculdade h2 span {
@@ -102,6 +103,18 @@
   display: block;
 }
 
+.container-certificacoes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.container-cursos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
 .container-cursos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -114,27 +127,30 @@
   background: var(--background-2);
   border-radius: 4px;
   padding: 40px;
-  position: relative;
   border-left: 3px solid transparent;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.35);
   transition: all 0.3s ease;
-  animation: slideUp 0.8s ease-out backwards;
-  animation-delay: 0.8s;
 }
 
 .card-curso:nth-of-type(1) {
   animation: slideUp 0.8s ease-out backwards;
-  animation-delay: 0.8s;
+  animation-delay: 0.6s;
 }
-
 .card-curso:nth-of-type(2) {
   animation: slideUp 0.8s ease-out backwards;
-  animation-delay: 1s;
+  animation-delay: 0.7s;
 }
-
 .card-curso:nth-of-type(3) {
   animation: slideUp 0.8s ease-out backwards;
-  animation-delay: 1.2s;
+  animation-delay: 0.8s;
+}
+.card-curso:nth-of-type(4) {
+  animation: slideUp 0.8s ease-out backwards;
+  animation-delay: 0.9s;
+}
+.card-curso:nth-of-type(5) {
+  animation: slideUp 0.8s ease-out backwards;
+  animation-delay: 1s;
 }
 
 .card-curso:hover {
@@ -149,8 +165,7 @@
   font-size: 1.25rem;
   color: var(--title-1);
   margin-top: 16px;
-  margin-bottom: 32px;
-  position: relative;
+  margin-bottom: 24px;
   min-height: 3.5rem;
 }
 
@@ -204,6 +219,7 @@
 .card-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   flex: 1;
 }
 
@@ -219,7 +235,7 @@
   object-fit: contain;
 }
 
-.origamid-credential {
+.curso-credential {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -246,7 +262,7 @@
   opacity: 0.9;
 }
 
-.origamid-credential:hover {
+.curso-credential:hover {
   background: rgba(59, 130, 246, 0.05);
   border-color: var(--element-1);
 }
@@ -302,37 +318,23 @@
   display: block;
 }
 
-.formacao-container-img {
-  grid-column: 3 / 5;
-  position: relative;
-  overflow: hidden;
-  background: var(--background-1);
-}
-
-.formacao-bg:hover {
-  opacity: 1;
-}
-
 @media (max-width: 960px) {
-  .card-formacao-titulo {
-    margin-top: 80px;
-    margin-bottom: 40px;
-    padding: 30px 24px;
+  .container-cards-formacao {
+    padding-top: 80px;
   }
 
-  .container-faculdades {
+  .formacao-topo-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
-    margin-bottom: 40px;
   }
 
+  .container-certificacoes,
   .container-cursos {
     grid-template-columns: 1fr;
-    gap: 40px;
   }
 
   .card-faculdade,
-  .card-curso {
+  .card-curso,
+  .card-formacao-titulo {
     padding: 24px 20px;
   }
 
@@ -340,23 +342,11 @@
     min-height: initial !important;
     margin-bottom: 16px !important;
   }
-
-  .stacks,
-  .origamid-credential,
-  .em-breve-credential {
-    margin-bottom: 16px !important;
-  }
 }
 
 @media (max-width: 600px) {
   .container-cards-formacao {
-    padding: 0 16px 30px 16px;
-  }
-
-  .card-formacao-titulo {
-    margin-top: 60px;
-    margin-bottom: 40px;
-    padding: 20px 16px;
+    padding: 60px 16px 30px 16px;
   }
 
   .card-formacao-titulo h1 {

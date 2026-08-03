@@ -10,121 +10,196 @@
 
 .contato-conteudo {
   grid-column: 1 / 3;
-  padding: 40px 20px;
+  padding: 120px 20px 40px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 40px;
+  justify-content: flex-start;
+}
+
+.contato-topo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: stretch;
 }
 
 .card-contato-titulo {
-  margin-bottom: 40px;
   background: transparent;
   border-radius: 4px;
   padding: 40px;
   border-left: 3px solid transparent;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
   transition: all 0.3s ease;
   animation: slideUp 0.8s ease-out backwards;
   animation-delay: 0.2s;
 }
 
-.contato-grid-links {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-
-.card-contato-acao {
+.card-contato-redes,
+.card-contato-form {
   background: var(--background-2);
   border-radius: 4px;
   padding: 40px;
   border-left: 3px solid transparent;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.35);
   transition: all 0.3s ease;
+}
+
+.card-contato-redes {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-}
-
-.card-contato-acao p {
-  flex-grow: 1;
-}
-
-.redes-sociais-icones {
-  display: flex;
-  gap: 20px;
-  margin-top: auto;
-  padding-top: 20px;
-}
-
-.card-contato-acao p span {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  white-space: nowrap;
-}
-
-.card-contato-acao p img {
-  width: 20px;
-  height: 20px;
-  display: block;
-}
-
-.card-contato-acao:nth-of-type(1) {
+  justify-content: space-between;
   animation: slideUp 0.8s ease-out backwards;
   animation-delay: 0.4s;
 }
-.card-contato-acao:nth-of-type(2) {
+
+.card-contato-form {
   animation: slideUp 0.8s ease-out backwards;
   animation-delay: 0.6s;
 }
 
 .card-contato-titulo:hover,
-.card-contato-acao:hover {
-  transform: translateY(-5px);
+.card-contato-redes:hover,
+.card-contato-form:hover {
+  transform: translateY(-4px);
   border-left-color: var(--element-1);
   box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.15);
 }
 
-.card-contato-titulo h1,
-.card-contato-acao h2 {
+.card-contato-titulo h1 {
+  margin-bottom: 12px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: var(--title-1);
+}
+
+.card-contato-redes h2,
+.card-contato-form h2 {
   font-family: "Poppins", Arial, sans-serif;
   font-weight: 600;
   color: var(--title-1);
 }
 
-.card-contato-titulo h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-.card-contato-acao h2 {
+.card-contato-redes h2,
+.card-contato-form h2 {
   font-size: 1.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .card-contato-titulo h1 span,
-.card-contato-acao h2 span {
+.card-contato-redes h2 span,
+.card-contato-form h2 span {
   color: var(--element-1);
 }
 
 .card-contato-titulo p,
-.card-contato-acao p {
+.card-contato-redes p,
+.card-contato-form p {
   font-family: "Roboto", Arial, sans-serif;
   color: var(--text-1);
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.card-contato-form p {
+  margin-bottom: 20px;
+}
+.card-contato-form p span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.card-contato-form p img {
+  width: 18px;
+  height: 18px;
+}
+
+.card-contato-form h2 {
+  margin-bottom: 40px;
+}
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-grupo label {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.85rem;
+  color: var(--title-1);
+  font-weight: 500;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+  width: 100%;
+  padding: 10px 14px;
+  background: var(--background-1, #0d1117);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  color: var(--text-1);
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+  border-color: var(--element-1);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.form-grupo textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.btn-enviar {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background-color: transparent;
+  color: var(--title-1);
+  border: 1px solid var(--border);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+  font-family: "Poppins", Arial, sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+  border-color: var(--element-1);
+  background-color: rgba(255, 255, 255, 0.02);
 }
 
 .redes-sociais-icones {
   display: flex;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 12px;
 }
 
 .redes-sociais-icones img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.2s;
+  width: 28px;
+  height: 28px;
+  transition:
+    transform 0.2s,
+    opacity 0.2s;
   opacity: 0.7;
 }
 
@@ -142,7 +217,7 @@
 .contato-bg {
   background: url("../img/backgrounds/contato.jpg") no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: center right;
   height: 100%;
   width: 100%;
   opacity: 0.5;
@@ -161,6 +236,7 @@
   }
   .contato-conteudo {
     grid-column: 1 / -1;
+    padding-top: 40px;
   }
   .contato-container-img {
     display: none;
@@ -168,7 +244,7 @@
 }
 
 @media (max-width: 600px) {
-  .contato-grid-links {
+  .contato-topo-grid {
     grid-template-columns: 1fr;
   }
 }

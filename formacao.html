@@ -37,12 +37,11 @@
   <main>
     <section class="formacao" id="formacao">
       <div class="container-cards-formacao">
-
-        <div class="card-formacao-titulo">
-          <h1>Formação<span>.</span></h1>
-          <p>Graduação e Cursos Extras</p>
-        </div>
-        <div class="container-faculdades">
+        <div class="formacao-topo-grid">
+          <div class="card-formacao-titulo">
+            <h1>Formação<span>.</span></h1>
+            <p>Graduação, Certificações e Cursos Extras</p>
+          </div>
           <div class="card-faculdade">
             <div class="curso-header">
               <span class="curso-tipo">Tecnólogo</span>
@@ -51,17 +50,51 @@
             <h2>Análise e Desenvolvimento de Sistemas<span>.</span></h2>
             <span class="curso-instituicao-faculdade">Centro Universitário FMU - FIAM FAAM</span>
           </div>
-          <div class="card-faculdade">
+        </div>
+        <div class="container-certificacoes">
+          <div class="card-curso">
             <div class="curso-header">
               <span class="curso-tipo">Certificação Profissional</span>
-              <span class="tag-status status-em-breve">Em breve...</span>
+              <span class="tag-status status-concluido">Concluído</span>
             </div>
-            <h2>Inteligência Artificial Generativa<span>.</span></h2>
-            <span class="curso-instituicao-faculdade">IBM / Coursera • FMU</span>
+            <h2>Introdução à Inteligência Artificial (AI)<span>.</span></h2>
+            <div class="card-content">
+              <a href="https://www.coursera.org/account/accomplishments/certificate/0PIY5J7FGHC2" target="_blank" rel="noopener noreferrer" class="curso-credential">
+                <div class="credential-main">
+                  <img src="./img/icones/estudo.svg" alt="Ícone de Estudos" class="credential-icon">
+                  <div class="credential-text">
+                    <p>Exibir credencial</p>
+                    <span>Coursera • Verificar autenticidade</span>
+                  </div>
+                </div>
+                <span class="arrow-link">↗</span>
+              </a>
+              <span class="curso-instituicao">IBM / Coursera • FMU</span>
+            </div>
+          </div>
+          <div class="card-curso">
+            <div class="curso-header">
+              <span class="curso-tipo">Certificação Profissional</span>
+              <span class="tag-status status-concluido">Concluído</span>
+            </div>
+            <h2>IA Generativa: Introdução e Aplicações<span>.</span></h2>
+            <div class="card-content">
+              <a href="https://www.coursera.org/account/accomplishments/certificate/HDI7KLPZHB0H" target="_blank" rel="noopener noreferrer" class="curso-credential">
+                <div class="credential-main">
+                  <img src="./img/icones/estudo.svg" alt="Ícone de Estudos" class="credential-icon">
+                  <div class="credential-text">
+                    <p>Exibir credencial</p>
+                    <span>Coursera • Verificar autenticidade</span>
+                  </div>
+                </div>
+                <span class="arrow-link">↗</span>
+              </a>
+              <span class="curso-instituicao">IBM / Coursera • FMU</span>
+            </div>
           </div>
         </div>
-        <ul class="container-cursos">
-          <li class="card-curso">
+        <div class="container-cursos">
+          <div class="card-curso">
             <div class="curso-header">
               <span class="curso-tipo">Curso Intensivo</span>
               <span class="tag-status status-concluido">Concluído</span>
@@ -75,8 +108,7 @@
                 <img src="./img/icones/vscode.svg" alt="VS Code">
                 <img src="./img/icones/github1.svg" alt="GitHub">
               </div>
-
-              <a href="https://www.origamid.com/certificate/5dfaa36c" target="_blank" rel="noopener noreferrer" class="origamid-credential">
+              <a href="https://www.origamid.com/certificate/5dfaa36c" target="_blank" rel="noopener noreferrer" class="curso-credential">
                 <div class="credential-main">
                   <img src="./img/icones/estudo.svg" alt="Ícone de Estudos" class="credential-icon">
                   <div class="credential-text">
@@ -88,8 +120,8 @@
               </a>
               <span class="curso-instituicao">Origamid</span>
             </div>
-          </li>
-          <li class="card-curso">
+          </div>
+          <div class="card-curso">
             <div class="curso-header">
               <span class="curso-tipo">Curso Intensivo</span>
               <span class="tag-status status-andamento">Cursando</span>
@@ -98,14 +130,14 @@
             <div class="card-content">
               <div class="stacks">
                 <img src="./img/icones/javascript.svg" alt="JavaScript">
-              </div><br>
+              </div>
               <div class="em-breve-credential">
                 <p>Credencial em breve...</p>
               </div>
               <span class="curso-instituicao">Origamid</span>
             </div>
-          </li>
-          <li class="card-curso">
+          </div>
+          <div class="card-curso">
             <div class="curso-header">
               <span class="curso-tipo">Curso Intensivo</span>
               <span class="tag-status status-em-breve">Em breve...</span>
@@ -116,14 +148,14 @@
                 <img src="./img/icones/react.svg" alt="React">
                 <img src="./img/icones/typescript.svg" alt="TypeScript">
                 <img src="./img/icones/nextjs.svg" alt="Next.js">
-              </div><br>
+              </div>
               <div class="em-breve-credential">
                 <p>Credencial em breve...</p>
               </div>
               <span class="curso-instituicao">Origamid</span>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -132,7 +164,7 @@
       <p>© 2026 - Lucas Dias. Todos os direitos reservados.</p>
     </div>
   </footer>
-  <script src="./js/script.js"></script>
+  <script type="module" src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,5 @@
-const btnMobile = document.getElementById("btn-mobile");
-const nav = document.getElementById("nav");
+import initbotaoMobile from "./modules/botao-mobile.js";
+import initFormContato from "./modules/envio-email.js";
 
-btnMobile.addEventListener("click", () => {
-  nav.classList.toggle("active");
-  btnMobile.classList.toggle("active");
-});
+initbotaoMobile();
+initFormContato();
