@@ -73,9 +73,16 @@
   animation-delay: 0.6s;
 }
 
-.card-projeto-item:nth-of-type(6) {
+.card-projeto-item:nth-of-type(6),
+.card-projeto-item:nth-of-type(7) {
   animation: slideUp 0.8s ease-out backwards;
   animation-delay: 0.8s;
+}
+
+.card-projeto-item:nth-of-type(8),
+.card-projeto-item:nth-of-type(9) {
+  animation: slideUp 0.8s ease-out backwards;
+  animation-delay: 1s;
 }
 
 .card-projeto-item:hover {
