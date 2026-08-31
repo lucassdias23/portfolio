@@ -43,7 +43,7 @@ O projeto foi construído utilizando tecnologias modernas de desenvolvimento web
   - **Sobre:** Introdução profissional e objetivos.
   - **Experiência:** Linha do tempo de atuação profissional.
   - **Formação:** Cursos acadêmicos, stacks estudadas e credenciais de autenticidade linkadas diretamente à Origamid.
-  - **Projetos:** Galeria de projetos desenvolvidos, com controle visual de status (_Concluído_ / _Em Andamento_) e links diretos para repositórios e deploys.
+  - **Projetos:** Galeria de projetos desenvolvidos, com controle visual de status (_Concluído_ / _Em Andamento_ / _Em Breve_) e links diretos para repositórios e deploys.
   - **Contato:** Cards simétricos de ação rápida para e-mail e redes sociais.
 
 ---
@@ -57,14 +57,4 @@ No portfólio você encontrará os seguintes projetos de destaque:
 3.  **Dogs:** Rede social completa inspirada no Instagram (React).
 4.  **Wildbeast:** Enciclopédia digital assíncrona focada em CSS Grid Layout.
 5.  **Flexblog:** Layout de blog responsivo estruturado puramente com Flexbox.
-
----
-
-## 🔧 Como Executar Localmente
-
-Caso queira clonar o projeto para analisar a estrutura de pastas e o código:
-
-1. Clone o repositório:
-   ```bash
-   git clone [https://github.com/lucassdias23/portfolio.git](https://github.com/lucassdias23/portfolio.git)
-   ```
+6.  **Forest:** Site institucional de uma pousada, feita com o Framework TailwindCSS.
