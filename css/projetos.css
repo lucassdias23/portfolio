@@ -168,6 +168,7 @@
 
 .projeto-descricao {
   flex: 1;
+  text-wrap: balance;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 0.875rem;
   line-height: 1.6;

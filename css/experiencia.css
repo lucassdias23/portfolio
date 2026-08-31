@@ -171,35 +171,28 @@
   margin-bottom: 20px;
 }
 
-.soft-skills-intro {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  color: var(--element-2);
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 24px;
-  opacity: 0.9;
-}
-
 .soft-skills-titulo span {
   color: var(--element-1);
 }
 
 .soft-skills-lista {
+  columns: 2;
+  column-gap: 40px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   color: var(--text-1);
   font-size: 1rem;
   line-height: 1.6;
 }
 
-.soft-skills-lista {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
 .soft-skills-lista li {
   position: relative;
   padding-left: 28px;
+  margin-bottom: 24px;
+  break-inside: avoid;
+}
+
+.soft-skills-lista li:last-child {
+  margin-bottom: 0;
 }
 
 .soft-skills-lista .icon-check {
@@ -208,11 +201,6 @@
   top: 3px;
   width: 18px;
   height: 18px;
-}
-
-.soft-skills-lista strong {
-  color: var(--element-1);
-  font-weight: 500;
 }
 
 .btn-linkedin {
@@ -260,6 +248,7 @@
     min-height: calc(100vh - 79px - 65px);
     position: relative;
   }
+
   .experiencia-bg {
     display: block;
     grid-column: 1 / -1;
@@ -296,14 +285,6 @@
     top: 68px;
   }
 
-  @media (max-width: 800px) {
-    .soft-skills-container {
-      margin-top: 24px;
-      padding: 32px 24px;
-      background: rgba(18, 24, 36, 0.95);
-    }
-  }
-
   .btn-linkedin {
     align-self: flex-end;
     width: auto;
@@ -318,6 +299,14 @@
 
   .experiencia-bg {
     display: none;
+  }
+
+  .soft-skills-lista {
+    columns: 1;
+  }
+
+  .soft-skills-lista li {
+    margin-bottom: 16px;
   }
 }
 

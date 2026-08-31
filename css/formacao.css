@@ -156,6 +156,10 @@
   animation: slideUp 0.8s ease-out backwards;
   animation-delay: 1s;
 }
+.container-certificacoes .card-curso:nth-of-type(3) {
+  animation: slideUp 0.8s ease-out backwards;
+  animation-delay: 1.2s;
+}
 
 .card-curso:hover {
   transform: translateY(-5px);
