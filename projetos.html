@@ -8,8 +8,8 @@
   <meta name="description" content="Projetos de Lucas Dias - Desenvolvedor Front-End">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="img/icones/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="preload" href="./css/style.min.css" as="style" onload="this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" href="./css/style.min.css">
@@ -35,221 +35,203 @@
     </div>
   </header>
   <main>
-    <section class="projetos" id="projetos">
-      <div class="card-projetos-introducao">
-        <div class="intro-titulo">
+    <div class="projetos-container">
+      <div class="projetos-header">
+        <div class="projetos-titulo">
           <h1>Projetos<span>.</span></h1>
+          <p class="descricao-titulo tags-typing" data-texto="Transformando conceito em código: da experiência do usuário ao desenvolvimento full stack."></p>
         </div>
-        <blockquote class="manifesto-autoral">
-          <p>"Projetos desenvolvidos com base na lógica dos cursos, com refatoração visual autoral aplicada nas principais aplicações para entregar uma experiência de design exclusiva e fora do óbvio."</p>
-        </blockquote>
-      </div>
-
-      <div class="card-projeto-item">
-        <div class="projeto-header">
-          <div>
-            <span class="status-tag concluido">Concluído</span>
-            <h2>Bikcraft<span>.</span></h2>
+        <div class="projetos-filtro">
+          <h2>Filtre por categoria<span>.</span></h2>
+          <div class="btn-projetos">
+            <button class="btn-filtro ativo" data-filtro="todos">Todos</button>
+            <button class="btn-filtro" data-filtro="frontend">Front-End</button>
+            <button class="btn-filtro" data-filtro="backend">Back-End</button>
+            <button class="btn-filtro" data-filtro="fullstack">Full Stack</button>
+            <button class="btn-filtro" data-filtro="uxui">UX / UI Design</button>
           </div>
-          <div class="projeto-techs">
-            <img src="./img/icones/html.svg" alt="HTML5">
-            <img src="./img/icones/css.svg" alt="CSS">
-            <img src="./img/icones/javascript.svg" alt="JavaScript">
-            <img src="./img/icones/figma.svg" alt="Figma">
-          </div>
-        </div>
-        <div class="projeto-body">
-          <p class="projeto-descricao">
-            Site institucional moderno para venda de bicicletas elétricas, focado em semântica HTML5, acessibilidade e design responsivo.
-          </p>
-          <div class="projeto-mini-thumb">
-            <img src="./img/projetos/bikcraft.jpg" alt="Preview Bikcraft">
-          </div>
-        </div>
-        <div class="projeto-footer">
-          <a href="https://github.com/lucassdias23/bikcraft" target="_blank" class="btn-projeto">Repositório Git</a>
-          <a href="https://lucassdias23.github.io/bikcraft/" target="_blank" class="btn-projeto">Ver Projeto</a>
         </div>
       </div>
-
-      <div class="card-projeto-item">
-        <div class="projeto-header">
-          <div>
-            <span class="status-tag concluido">Concluído</span>
-            <h2>Animais Fantásticos<span>.</span></h2>
-          </div>
-          <div class="projeto-techs">
-            <img src="./img/icones/html.svg" alt="HTML5">
-            <img src="./img/icones/css.svg" alt="CSS">
-            <img src="./img/icones/javascript.svg" alt="JavaScript">
-          </div>
+      <section class="projetos-bloco-1" aria-label="Projetos Full Stack, Front-End Avançado e Back-End">
+        <div data-categoria="fullstack">
+          <span class="categoria-projeto">Full Stack</span>
+          <ul class="card-projeto">
+            <div class="projeto-header">
+              <h3>Dogs com Next.js<span>.</span></h3>
+              <ul class="stacks-projetos">
+                <li><img src="./img/icones/html.svg" alt="HTML" width="20" height="20"></li>
+                <li><img src="./img/icones/css.svg" alt="CSS" width="20" height="20"></li>
+                <li><img src="./img/icones/react.svg" alt="React" width="22" height="20"></li>
+                <li><img src="./img/icones/nextjs.svg" alt="Next.js" width="20" height="20"></li>
+              </ul>
+            </div>
+            <div class="projeto-corpo">
+              <p>Refatoração completa da rede social Dogs utilizando Next.js. Foco em renderização Server-Side (SSR) e otimização de imagens.</p>
+              <img src="./img/projetos/dogs-next.jpg" alt="Thumbnail Dogs Next" class="projeto-thumb">
+            </div>
+            <div class="buttons">
+              <button class="btn-projeto-breve">Em breve...</button>
+            </div>
+          </ul>
         </div>
-        <div class="projeto-body">
-          <p class="projeto-descricao">
-            Interface interativa com manipulação de DOM, usando JavaScript ES6 para aprimorar a experiência do usuário.
-          </p>
-          <div class="projeto-mini-thumb">
-            <img src="./img/projetos/animais-fantasticos.jpg" alt="Preview Animais Fantásticos">
-          </div>
+        <div data-categoria="frontend">
+          <span class="categoria-projeto">Front-End (Avançado)</span>
+          <ul class="card-projeto">
+            <div class="projeto-header">
+              <h3>Fintech<span>.</span></h3>
+              <ul class="stacks-projetos">
+                <li><img src="./img/icones/html.svg" alt="HTML" width="20" height="20"></li>
+                <li><img src="./img/icones/css.svg" alt="CSS" width="20" height="20"></li>
+                <li><img src="./img/icones/react.svg" alt="React" width="22" height="20"></li>
+                <li><img src="./img/icones/typescript.svg" alt="TypeScript" width="20" height="20"></li>
+              </ul>
+            </div>
+            <div class="projeto-corpo">
+              <p>Dashboard interativo voltado para gestão financeira pessoal construído com React e TypeScript.</p>
+              <img src="./img/projetos/fintech.jpg" alt="Thumbnail Fintech" class="projeto-thumb">
+            </div>
+            <div class="buttons">
+              <button class="btn-projeto-breve">Em breve...</button>
+            </div>
+          </ul>
         </div>
-        <div class="projeto-footer">
-          <a href="https://github.com/lucassdias23/animais-fantasticos" target="_blank" class="btn-projeto">Repositório Git</a>
-          <a href="https://lucassdias23.github.io/animais-fantasticos" target="_blank" class="btn-projeto">Ver Projeto</a>
-        </div>
-      </div>
-      <div class="card-projeto-item">
-        <div class="projeto-header">
-          <div>
-            <span class="status-tag concluido">Concluído</span>
-            <h2>Wildbeast<span>.</span></h2>
-          </div>
-          <div class="projeto-techs">
-            <img src="./img/icones/html.svg" alt="HTML5">
-            <img src="./img/icones/css.svg" alt="CSS">
-          </div>
-        </div>
-        <div class="projeto-body">
-          <p class="projeto-descricao">
-            Enciclopédia digital sobre lobos, desenvolvida utilizando CSS Grid Layout para criar uma interface rica, assimétrica e totalmente responsiva.
-          </p>
-          <div class="projeto-mini-thumb">
-            <img src="./img/projetos/wildbeast.jpg" alt="Preview Wildbeast">
-          </div>
-        </div>
-        <div class="projeto-footer">
-          <a href="https://github.com/lucassdias23/wildbeast" target="_blank" class="btn-projeto">Repositório Git</a>
-          <a href="https://lucassdias23.github.io/wildbeast/" target="_blank" class="btn-projeto">Ver Projeto</a>
-        </div>
-      </div>
-
-      <div class="card-projeto-item">
-        <div class="projeto-header">
-          <div>
-            <span class="status-tag concluido">Concluído</span>
-            <h2>Flexblog<span>.</span></h2>
-          </div>
-          <div class="projeto-techs">
-            <img src="./img/icones/html.svg" alt="HTML5">
-            <img src="./img/icones/css.svg" alt="CSS">
+        <div class="card-em-breve-coluna" data-categoria="backend">
+          <span class="categoria-projeto">Back-End</span>
+          <div class="card-projeto card-vazio">
+            <div class="em-breve-centro">Em breve...</div>
           </div>
         </div>
-        <div class="projeto-body">
-          <p class="projeto-descricao">
-            Site em formato de blog, com alinhamento total desenvolvido usando as propriedades do Display Flexbox.
-          </p>
-          <div class="projeto-mini-thumb">
-            <img src="./img//projetos/flexblog.jpg" alt="Preview Flexblog">
+      </section>
+      <span class="categoria-projeto front">Front-End</span>
+      <section class="projetos-bloco-2" aria-label="Projetos Front-End" data-categoria="frontend">
+        <ul class="card-projeto">
+          <div class="projeto-header">
+            <h3>Dogs<span>.</span></h3>
+            <ul class="stacks-projetos">
+              <li><img src="./img/icones/html.svg" alt="HTML" width="20" height="20"></li>
+              <li><img src="./img/icones/css.svg" alt="CSS" width="20" height="20"></li>
+              <li><img src="./img/icones/react.svg" alt="React" width="22" height="20"></li>
+            </ul>
+          </div>
+          <div class="projeto-corpo">
+            <p>Rede social para cachorros com funcionalidades inspiradas no Instagram. Desenvolvida em React.</p>
+            <img src="./img/projetos/dogs.jpg" alt="Thumbnail Dogs" class="projeto-thumb">
+          </div>
+          <div class="buttons">
+            <button class="btn-projeto-breve">Em breve...</button>
+          </div>
+        </ul>
+        <ul class="card-projeto">
+          <div class="projeto-header">
+            <h3>Bikcraft<span>.</span></h3>
+            <ul class="stacks-projetos">
+              <li><img src="./img/icones/html.svg" alt="HTML" width="20" height="20"></li>
+              <li><img src="./img/icones/css.svg" alt="CSS" width="20" height="20"></li>
+              <li><img src="./img/icones/javascript.svg" alt="JavaScript" width="20" height="20"></li>
+              <li><img src="./img/icones/figma.svg" alt="Figma" width="20" height="20"></li>
+            </ul>
+          </div>
+          <div class="projeto-corpo">
+            <p>Site institucional moderno para venda de bicicletas elétricas, focado em semântica HTML5 e responsividade.</p>
+            <img src="./img/projetos/bikcraft.jpg" alt="Thumbnail Bikcraft" class="projeto-thumb">
+          </div>
+          <div class="buttons">
+            <a href="https://github.com/lucassdias23/bikcraft" target="_blank"><button class="btn-projeto">Repositório Git</button></a>
+            <a href="https://lucassdias23.github.io/bikcraft/" target="_blank"><button class="btn-projeto">Ver Projeto</button></a>
+          </div>
+        </ul>
+        <ul class="card-projeto">
+          <div class="projeto-header">
+            <h3>Animais Fantásticos<span>.</span></h3>
+            <ul class="stacks-projetos">
+              <li><img src="./img/icones/html.svg" alt="HTML" width="20" height="20"></li>
+              <li><img src="./img/icones/css.svg" alt="CSS" width="20" height="20"></li>
+              <li><img src="./img/icones/javascript.svg" alt="JavaScript" width="20" height="20"></li>
+            </ul>
+          </div>
+          <div class="projeto-corpo">
+            <p>Interface interativa com manipulação de DOM usando JavaScript ES6 para aprimorar a UX.</p>
+            <img src="./img/projetos/animais-fantasticos.jpg" alt="Thumbnail Animais Fantásticos" class="projeto-thumb">
+          </div>
+          <div class="buttons">
+            <a href="https://github.com/lucassdias23/animais-fantasticos" target="_blank"><button class="btn-projeto">Repositório Git</button></a>
+            <a href="https://lucassdias23.github.io/animais-fantasticos/" target="_blank"><button class="btn-projeto">Ver Projeto</button></a>
+          </div>
+        </ul>
+        <ul class="card-projeto">
+          <div class="projeto-header">
+            <h3>Forest<span>.</span></h3>
+            <ul class="stacks-projetos">
+              <li><img src="./img/icones/html.svg" alt="HTML" width="20" height="20"></li>
+              <li><img src="./img/icones/javascript.svg" alt="JavaScript" width="20" height="20"></li>
+              <li><img src="./img/icones/tailwind.svg" alt="Tailwind" width="20" height="20"></li>
+            </ul>
+          </div>
+          <div class="projeto-corpo">
+            <p>O Forest é uma pousada localizada em uma floresta projetada com o framework Tailwind CSS.</p>
+            <img src="./img/projetos/forest.jpg" alt="Thumbnail Forest" class="projeto-thumb">
+          </div>
+          <div class="buttons">
+            <a href="https://github.com/lucassdias23/Forest" target="_blank"><button class="btn-projeto">Repositório Git</button></a>
+            <a href="https://forestlucas.vercel.app/" target="_blank"><button class="btn-projeto">Ver Projeto</button></a>
+          </div>
+        </ul>
+        <ul class="card-projeto">
+          <div class="projeto-header">
+            <h3>Wildbeast<span>.</span></h3>
+            <ul class="stacks-projetos">
+              <li><img src="./img/icones/html.svg" alt="HTML" width="20" height="20"></li>
+              <li><img src="./img/icones/css.svg" alt="CSS" width="20" height="20"></li>
+            </ul>
+          </div>
+          <div class="projeto-corpo">
+            <p>Enciclopédia digital sobre lobos desenvolvida utilizando CSS Grid Layout para interface assimétrica.</p>
+            <img src="./img/projetos/wildbeast.jpg" alt="Thumbnail Wildbeast" class="projeto-thumb">
+          </div>
+          <div class="buttons">
+            <a href="https://github.com/lucassdias23/wildbeast" target="_blank"><button class="btn-projeto">Repositório Git</button></a>
+            <a href="https://lucassdias23.github.io/wildbeast" target="_blank"><button class="btn-projeto">Ver Projeto</button></a>
+          </div>
+        </ul>
+        <ul class="card-projeto">
+          <div class="projeto-header">
+            <h3>Flexblog<span>.</span></h3>
+            <ul class="stacks-projetos">
+              <li><img src="./img/icones/html.svg" alt="HTML" width="20" height="20"></li>
+              <li><img src="./img/icones/css.svg" alt="CSS" width="20" height="20"></li>
+            </ul>
+          </div>
+          <div class="projeto-corpo">
+            <p>Site em formato de blog com alinhamento total desenvolvido usando as propriedades do Display Flexbox.</p>
+            <img src="./img/projetos/flexblog.jpg" alt="Thumbnail Flexblog" class="projeto-thumb">
+          </div>
+          <div class="buttons">
+            <a href="https://github.com/lucassdias23/flexblog" target="_blank"><button class="btn-projeto">Repositório Git</button></a>
+            <a href="https://lucassdias23.github.io/flexblog" target="_blank"><button class="btn-projeto">Ver Projeto</button></a>
+          </div>
+        </ul>
+      </section>
+      <section class="projetos-bloco-3" aria-label="Projetos UX/UI Design" data-categoria="uxui">
+        <span class="categoria-projeto">UX / UI Design</span>
+        <div class="card-ux-ui">
+          <div class="ux-conteudo">
+            <div class="projeto-header">
+              <h3>Surfbot<span>.</span></h3>
+              <ul class="stacks-projetos">
+                <li><img src="./img/icones/figma.svg" alt="Figma" width="20" height="20"></li>
+              </ul>
+            </div>
+            <p>Protótipo de site institucional esportivo, que dá aulas práticas de surf. Wireframe com sistemas de cores, espaçamento e tipografia, utilizando a ferramenta Figma.</p>
+            <div class="em-breve-ux">Em breve...</div>
+          </div>
+          <div class="ux-ui-imagens">
+            <img src="./img/projetos/surfbot.jpg" alt="Home Surfbot" class="projeto-thumb-ux">
+            <img src="./img/projetos/surfbot2.jpg" alt="Matrícula Surfbot" class="projeto-thumb-ux">
+            <img src="./img/projetos/surfbot3.jpg" alt="Contato Surfbot" class="projeto-thumb-ux">
           </div>
         </div>
-        <div class="projeto-footer">
-          <a href="https://github.com/lucassdias23/flexblog" target="_blank" class="btn-projeto">Repositório Git</a>
-          <a href="https://lucassdias23.github.io/flexblog/" target="_blank" class="btn-projeto">Ver Projeto</a>
-        </div>
-      </div>
-      <div class="card-projeto-item">
-        <div class="projeto-header">
-          <div>
-            <span class="status-tag concluido">Concluído</span>
-            <h2>Forest<span>.</span></h2>
-          </div>
-          <div class="projeto-techs">
-            <img src="./img/icones/html.svg" alt="HTML5">
-            <img src="./img/icones/javascript.svg" alt="JavaScript">
-            <img src="./img/icones/tailwind.svg" alt="Tailwind">
-          </div>
-        </div>
-        <div class="projeto-body">
-          <p class="projeto-descricao">
-            O Forest é uma pousada localizada em uma floresta. Toda a interface e interações foi projetada usando o framework Tailwind CSS.
-          </p>
-          <div class="projeto-mini-thumb">
-            <img src="./img/projetos/forest.jpg" alt="Preview Flexblog">
-          </div>
-        </div>
-        <div class="projeto-footer">
-          <a href="https://github.com/lucassdias23/Forest" target="_blank" class="btn-projeto">Repositório Git</a>
-          <a href="https://forestlucas.vercel.app/" target="_blank" class="btn-projeto">Ver Projeto</a>
-        </div>
-      </div>
-      <div class="card-projeto-item">
-        <div class="projeto-header">
-          <div>
-            <span class="status-tag em-breve">Em Breve...</span>
-            <h2>Dogs<span>.</span></h2>
-          </div>
-          <div class="projeto-techs">
-            <img src="./img/icones/html.svg" alt="HTML5">
-            <img src="./img/icones/css.svg" alt="CSS">
-            <img src="./img/icones/react.svg" alt="React">
-          </div>
-        </div>
-        <div class="projeto-body">
-          <p class="projeto-descricao">
-            Rede social para cachorros com funcionalidades inspiradas no Instagram. Desenvolvida em React, incluindo autenticação de usuário, feed de fotos e comentários.
-          </p>
-          <div class="projeto-mini-thumb">
-            <img src="./img/projetos/dogs.jpg" alt="Preview Dogs">
-          </div>
-        </div>
-        <div class="projeto-footer">
-          <span class="btn-projeto-breve">Quase lá...</span>
-          <span class="btn-projeto-breve">Em breve...</span>
-        </div>
-      </div>
-      <div class="card-projeto-item">
-        <div class="projeto-header">
-          <div>
-            <span class="status-tag em-breve">Em Breve...</span>
-            <h2>Dogs com Next.js<span>.</span></h2>
-          </div>
-          <div class="projeto-techs">
-            <img src="./img/icones/html.svg" alt="HTML5">
-            <img src="./img/icones/css.svg" alt="CSS">
-            <img src="./img/icones/react.svg" alt="React">
-            <img src="./img/icones/nextjs.svg" alt="Next.js">
-          </div>
-        </div>
-        <div class="projeto-body">
-          <p class="projeto-descricao">
-            Refatoração completa da rede social Dogs utilizando Next.js. Foco em renderização Server-Side (SSR), otimização de imagens e performance para SEO.
-          </p>
-          <div class="projeto-mini-thumb">
-            <img src="./img/projetos/dogs-next.jpg" alt="Preview Dogs Next.JS">
-          </div>
-        </div>
-        <div class="projeto-footer">
-          <span class="btn-projeto-breve">Quase lá...</span>
-          <span class="btn-projeto-breve">Em breve...</span>
-        </div>
-      </div>
-      <div class="card-projeto-item">
-        <div class="projeto-header">
-          <div>
-            <span class="status-tag em-breve">Em Breve...</span>
-            <h2>Fintech<span>.</span></h2>
-          </div>
-          <div class="projeto-techs">
-            <img src="./img/icones/html.svg" alt="HTML5">
-            <img src="./img/icones/css.svg" alt="CSS">
-            <img src="./img/icones/react.svg" alt="React">
-            <img src="./img/icones/typescript.svg" alt="TypeScript">
-          </div>
-        </div>
-        <div class="projeto-body">
-          <p class="projeto-descricao">
-            Dashboard interativo voltado para gestão financeira pessoal. Construído com React e TypeScript, focando em tipagem estática, manipulação de dados e gráficos.
-          </p>
-          <div class="projeto-mini-thumb">
-            <img src="./img/projetos/fintech.jpg" alt="Preview Fintech">
-          </div>
-        </div>
-        <div class="projeto-footer">
-          <span class="btn-projeto-breve">Quase lá...</span>
-          <span class="btn-projeto-breve">Em breve...</span>
-        </div>
-      </div>
-
-    </section>
+      </section>
+    </div>
   </main>
   <footer class="footer-container">
     <div class="footer">

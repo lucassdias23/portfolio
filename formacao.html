@@ -35,161 +35,206 @@
     </div>
   </header>
   <main>
-    <section class="formacao" id="formacao">
-      <div class="container-cards-formacao">
-        <div class="formacao-topo-grid">
-          <div class="card-formacao-titulo">
-            <h1>Formação<span>.</span></h1>
-            <p>Graduação, Cursos Intensivos e Certificações.</p>
-          </div>
-          <div class="card-faculdade">
-            <div class="curso-header">
-              <span class="curso-tipo">Tecnólogo</span>
-              <span class="tag-status status-andamento">Cursando</span>
-            </div>
-            <h2>Análise e Desenvolvimento de Sistemas<span>.</span></h2>
-            <p>EAD - Previsão de formação em 01/2028</p>
-            <span class="curso-instituicao-faculdade">FMU - FIAM FAAM</span>
+    <div class="formacao-container">
+      <section class="formacao" aria-label="Formação Principal">
+        <div class="formacao-titulo">
+          <h1>Formação<span>.</span></h1>
+          <p class="descricao-titulo tags-typing" data-texto="Minha trajetória de aprendizado contínuo, unindo base acadêmica sólida a certificações práticas."></p>
+        </div>
+        <div class="faculdade">
+          <h2>Tecnólogo em Análise e <br>Desenvolvimento de Sistemas<span>.</span></h2>
+          <p>Graduando no segundo semestre de ADS. Com previsão de formação, para o 2° semestre de 2028.</p>
+          <div class="footer-cursos">
+            <span class="instituicao-faculdade">FMU - FIAM FAAM</span>
+            <span class="ano-conclusao">2025 - Presente</span>
           </div>
         </div>
-        <div class="container-cursos">
-          <div class="card-curso">
-            <div class="curso-header">
-              <span class="curso-tipo">Front-End & UX/UI</span>
-              <span class="tag-status status-concluido">Concluído</span>
-            </div>
-            <h2>HTML, CSS e UI Design para Iniciantes<span>.</span></h2>
-            <div class="card-content">
-              <div class="stacks">
-                <img src="./img/icones/html.svg" alt="HTML">
-                <img src="./img/icones/css.svg" alt="CSS">
-                <img src="./img/icones/figma.svg" alt="Figma">
-                <img src="./img/icones/vscode.svg" alt="VS Code">
-                <img src="./img/icones/github1.svg" alt="GitHub">
-              </div>
-              <a href="https://www.origamid.com/certificate/5dfaa36c" target="_blank" rel="noopener noreferrer" class="curso-credential">
-                <div class="credential-main">
-                  <img src="./img/icones/estudo.svg" alt="Ícone de Estudos" class="credential-icon">
-                  <div class="credential-text">
-                    <p>Exibir credencial</p>
-                    <span>Origamid • Verificar autenticidade</span>
-                  </div>
-                </div>
-                <span class="arrow-link">↗</span>
-              </a>
-              <span class="curso-instituicao">Origamid</span>
-            </div>
-          </div>
-          <div class="card-curso">
-            <div class="curso-header">
-              <span class="curso-tipo">Front-End</span>
-              <span class="tag-status status-concluido">Concluído</span>
-            </div>
-            <h2>JavaScript Completo ES6+<span>.</span></h2>
-            <div class="card-content">
-              <div class="stacks">
-                <img src="./img/icones/html.svg" alt="HTML">
-                <img src="./img/icones/css.svg" alt="CSS">
-                <img src="./img/icones/javascript.svg" alt="JavaScript">
-                <img src="./img/icones/vscode.svg" alt="VS Code">
-                <img src="./img/icones/github1.svg" alt="GitHub">
-              </div>
-              <a href="https://www.origamid.com/certificate/63edf9143b" target="_blank" rel="noopener noreferrer" class="curso-credential">
-                <div class="credential-main">
-                  <img src="./img/icones/estudo.svg" alt="Ícone de Estudos" class="credential-icon">
-                  <div class="credential-text">
-                    <p>Exibir credencial</p>
-                    <span>Origamid • Verificar autenticidade</span>
-                  </div>
-                </div>
-                <span class="arrow-link">↗</span>
-              </a>
-              <span class="curso-instituicao">Origamid</span>
-            </div>
-          </div>
-          <div class="card-curso">
-            <div class="curso-header">
-              <span class="curso-tipo">Frameworks & Libs</span>
-              <span class="tag-status status-em-breve">Em breve...</span>
-            </div>
-            <h2>Desenvolvedor React / Next.js<span>.</span></h2>
-            <div class="card-content">
-              <div class="stacks">
-                <img src="./img/icones/react.svg" alt="React">
-                <img src="./img/icones/typescript.svg" alt="TypeScript">
-                <img src="./img/icones/nextjs.svg" alt="Next.js">
-              </div>
-              <div class="em-breve-credential">
-                <p>Credencial em breve...</p>
-              </div>
-              <span class="curso-instituicao">Origamid</span>
-            </div>
-          </div>
+        <div class="filtros-cursos">
+          <h2>Filtre por Conhecimento<span>.</span></h2>
+          <button class="btn ativo" data-filtro="todos">Todos</button>
+          <button class="btn" data-filtro="frontend">Front - End</button>
+          <button class="btn" data-filtro="backend">Back - End</button>
+          <button class="btn" data-filtro="uxui">UX / UI Design</button>
+          <button class="btn" data-filtro="ia">IA</button>
         </div>
-        <div class="container-certificacoes">
-          <div class="card-curso">
-            <div class="curso-header">
-              <span class="curso-tipo">Back-End</span>
-              <span class="tag-status status-andamento">Cursando</span>
-            </div>
-            <h2>Bootcamp - Java com IA<span>.</span></h2>
-            <div class="card-content">
-              <div class="stacks">
-                <img src="./img/icones/java.svg" alt="Java">
-                <img src="./img/icones/spring.svg" alt="Spring Boot">
-                <img src="./img/icones/intellij.svg" alt="IntelliJ Idea">
-                <img src="./img/icones/github1.svg" alt="GitHub">
+      </section>
+      <section class="certificacoes" aria-label="Cursos e Certificações">
+        <div class="grupo-formacao" data-categoria="frontend">
+          <span class="categoria-curso">Formação em Front-End</span>
+          <ul class="lista-cursos">
+            <li class="card-curso">
+              <div class="header-curso">
+                <h2>HTML, CSS e UI Design para Iniciantes<span>.</span></h2>
+                <span class="tag-status concluido">Concluído</span>
               </div>
-              <div class="em-breve-credential">
-                <p>Credencial em breve...</p>
+              <ul class="stacks">
+                <li><img src="./img/icones/html.svg" alt="HTML"></li>
+                <li><img src="./img/icones/css.svg" alt="CSS"></li>
+                <li><img src="./img/icones/figma.svg" alt="Figma"></li>
+                <li><img src="./img/icones/vscode.svg" alt="VS Code"></li>
+                <li><img src="./img/icones/github.svg" alt="GitHub"></li>
+                <li><img src="./img/icones/git-bash.svg" alt="Git Bash"></li>
+              </ul>
+              <div class="card-footer">
+                <p class="detalhes-curso">
+                  <span class="instituicao">Origamid</span>
+                  <span class="horas">80 H</span>
+                </p>
+                <a href="https://www.origamid.com/certificate/5dfaa36c" class="credencial" target="_blank" rel="noopener noreferrer">Ver Credencial</a>
               </div>
-              <span class="curso-instituicao">Itaú / DIO</span>
-            </div>
-          </div>
-          <div class="card-curso">
-            <div class="curso-header">
-              <span class="curso-tipo">Inteligência Artificial</span>
-              <span class="tag-status status-concluido">Concluído</span>
-            </div>
-            <h2>Introdução à Inteligência Artificial (AI)<span>.</span></h2>
-            <div class="card-content">
-              <a href="https://www.coursera.org/account/accomplishments/certificate/0PIY5J7FGHC2" target="_blank" rel="noopener noreferrer" class="curso-credential">
-                <div class="credential-main">
-                  <img src="./img/icones/estudo.svg" alt="Ícone de Estudos" class="credential-icon">
-                  <div class="credential-text">
-                    <p>Exibir credencial</p>
-                    <span>Coursera • Verificar autenticidade</span>
-                  </div>
-                </div>
-                <span class="arrow-link">↗</span>
-              </a>
-              <span class="curso-instituicao">IBM / Coursera • FMU</span>
-            </div>
-          </div>
-          <div class="card-curso">
-            <div class="curso-header">
-              <span class="curso-tipo">Inteligência Artificial</span>
-              <span class="tag-status status-concluido">Concluído</span>
-            </div>
-            <h2>IA Generativa: Introdução e Aplicações<span>.</span></h2>
-            <div class="card-content">
-              <a href="https://www.coursera.org/account/accomplishments/certificate/HDI7KLPZHB0H" target="_blank" rel="noopener noreferrer" class="curso-credential">
-                <div class="credential-main">
-                  <img src="./img/icones/estudo.svg" alt="Ícone de Estudos" class="credential-icon">
-                  <div class="credential-text">
-                    <p>Exibir credencial</p>
-                    <span>Coursera • Verificar autenticidade</span>
-                  </div>
-                </div>
-                <span class="arrow-link">↗</span>
-              </a>
-              <span class="curso-instituicao">IBM / Coursera • FMU</span>
-            </div>
-          </div>
+            </li>
+            <li class="card-curso">
+              <div class="header-curso">
+                <h2>JavaScript Completo ES6+<span>.</span></h2>
+                <span class="tag-status concluido">Concluído</span>
+              </div>
+              <ul class="stacks">
+                <li><img src="./img/icones/html.svg" alt="HTML"></li>
+                <li><img src="./img/icones/css.svg" alt="CSS"></li>
+                <li><img src="./img/icones/javascript.svg" alt="JavaScript"></li>
+                <li><img src="./img/icones/vscode.svg" alt="VS Code"></li>
+                <li><img src="./img/icones/github.svg" alt="GitHub"></li>
+                <li><img src="./img/icones/git-bash.svg" alt="Git Bash"></li>
+              </ul>
+              <div class="card-footer">
+                <p class="detalhes-curso">
+                  <span class="instituicao">Origamid</span>
+                  <span class="horas">74 H</span>
+                </p>
+                <a href="https://www.origamid.com/certificate/63edf9143b" class="credencial" target="_blank" rel="noopener noreferrer">Ver Credencial</a>
+              </div>
+            </li>
+          </ul>
+          <span class="categoria-curso subcategoria">Frameworks & Libs</span>
+          <ul class="lista-cursos">
+            <li class="card-curso">
+              <div class="header-curso">
+                <h2>Tailwind CSS, React, TypeScript & Next.js<span>.</span></h2>
+                <span class="tag-status em-breve">Em breve</span>
+              </div>
+              <ul class="stacks">
+                <li><img src="./img/icones/tailwind.svg" alt="Tailwind"></li>
+                <li><img src="./img/icones/react.svg" alt="React"></li>
+                <li><img src="./img/icones/typescript.svg" alt="TypeScript"></li>
+                <li><img src="./img/icones/nextjs.svg" alt="Next.js"></li>
+              </ul>
+              <div class="card-footer">
+                <p class="detalhes-curso">
+                  <span class="instituicao">Origamid</span>
+                  <span class="horas">106 H</span>
+                </p>
+                <p class="credencial">Credencial em breve...</p>
+              </div>
+            </li>
+          </ul>
         </div>
-      </div>
+        <div class="grupo-formacao" data-categoria="uxui">
+          <span class="categoria-curso">Formação em UX / UI Design</span>
+          <ul class="lista-cursos">
+            <li class="card-curso">
+              <div class="header-curso">
+                <h2>UI Design Avançado<span>.</span></h2>
+                <span class="tag-status andamento">Em Andamento</span>
+              </div>
+              <ul class="stacks">
+                <li><img src="./img/icones/figma.svg" alt="Figma"></li>
+              </ul>
+              <div class="card-footer">
+                <p class="detalhes-curso">
+                  <span class="instituicao">Origamid</span>
+                  <span class="horas">30 H</span>
+                </p>
+                <p class="credencial">Credencial em breve...</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="grupo-formacao" data-categoria="backend">
+          <span class="categoria-curso">Formação em Back-End</span>
+          <ul class="lista-cursos">
+            <li class="card-curso">
+              <div class="header-curso">
+                <h2>Bootcamp Itaú - Java com IA<span>.</span></h2>
+                <span class="tag-status andamento">Em Andamento</span>
+              </div>
+              <ul class="stacks">
+                <li><img src="./img/icones/java.svg" alt="Java"></li>
+                <li><img src="./img/icones/spring.svg" alt="Spring"></li>
+                <li><img src="./img/icones/intellij.svg" alt="IntelliJ"></li>
+                <li><img src="./img/icones/github.svg" alt="GitHub"></li>
+              </ul>
+              <div class="card-footer">
+                <p class="detalhes-curso">
+                  <span class="instituicao">Dio</span>
+                  <span class="horas">74 H</span>
+                </p>
+                <p class="credencial">Credencial em breve...</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="lista-cursos">
+            <li class="card-curso">
+              <div class="header-curso">
+                <h2>Node.js<span>.</span></h2>
+                <span class="tag-status em-breve">Em breve</span>
+              </div>
+              <ul class="stacks">
+                <li><img src="./img/icones/node.svg" alt="Node.js"></li>
+              </ul>
+              <div class="card-footer">
+                <p class="detalhes-curso">
+                  <span class="instituicao">Origamid</span>
+                  <span class="horas">48 H</span>
+                </p>
+                <p class="credencial">Credencial em breve...</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="grupo-formacao" data-categoria="ia">
+          <span class="categoria-curso">Certificações Internacionais</span>
+          <ul class="lista-cursos">
+            <li class="card-curso">
+              <div class="header-curso">
+                <h2>Introdução a Inteligência Artificial (IA)<span>.</span></h2>
+                <span class="tag-status concluido">Concluído</span>
+              </div>
+              <ul class="stacks">
+                <li><img src="./img/icones/ibm.svg" alt="IBM"></li>
+              </ul>
+              <div class="card-footer">
+                <p class="detalhes-curso">
+                  <span class="instituicao">Coursera</span>
+                  <span class="horas">13 H</span>
+                </p>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/0PIY5J7FGHC2" class="credencial" target="_blank" rel="noopener noreferrer">Ver Credencial</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="lista-cursos">
+            <li class="card-curso">
+              <div class="header-curso">
+                <h2>IA Generativa: Introdução e Aplicações (GenAI)<span>.</span></h2>
+                <span class="tag-status concluido">Concluído</span>
+              </div>
+              <ul class="stacks">
+                <li><img src="./img/icones/ibm.svg" alt="IBM"></li>
+              </ul>
+              <div class="card-footer">
+                <p class="detalhes-curso">
+                  <span class="instituicao">Coursera</span>
+                  <span class="horas">8 H</span>
+                </p>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/HDI7KLPZHB0H" class="credencial" target="_blank" rel="noopener noreferrer">Ver Credencial</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </div>
     </section>
+    </div>
   </main>
+  </div>
   <footer class="footer-container">
     <div class="footer">
       <p>© 2026 - Lucas Dias. Todos os direitos reservados.</p>

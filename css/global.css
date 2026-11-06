@@ -1,21 +1,12 @@
 :root {
-  --background-1: #0b0f19;
-  --background-2: #121824;
+  --background: #0b0f19;
   --footer-bg: #11141a;
-  --header-bg: #1a202c;
-  --title-1: #edf2f7;
-  --title-2: #f7fafc;
+  --title: #edf2f7;
   --text-1: #a0aec0;
   --text-2: #cbd5e0;
-  --border: #2d3748;
-  --hover: #4a5568;
   --element-1: #3b82f6;
   --element-2: #e2e8f0;
-  --shadow: #1a202c;
   --gradient: linear-gradient(#718096, #4a5568);
-  --btn-text: #0b0f19;
-  --btn-bg: #edf2f7;
-  --btn-hover: #cbd5e0;
   --btn-burger: #121824;
   --btn-burger-1: #edf2f7;
   --done: #2ed573;
@@ -30,7 +21,7 @@
 }
 
 body {
-  background: var(--background-1);
+  background: var(--background);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -71,11 +62,91 @@ a {
   }
 }
 
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 @keyframes fadeInFoto {
   from {
     opacity: 0;
   }
   to {
     opacity: 0.7;
+  }
+}
+
+@keyframes piscar {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes fadeInPure {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes piscarCursor {
+  0%,
+  100% {
+    border-color: aqua;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes flutuarMapa {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes pulsarSp {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
