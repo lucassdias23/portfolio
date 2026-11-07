@@ -16,6 +16,7 @@
   animation: fadeIn 0.8s ease-out forwards;
   animation-delay: 0.2s;
   transition: opacity 0.5s ease-in-out;
+  margin-bottom: 40px;
 }
 
 .foto-perfil-bg:hover {
@@ -29,7 +30,6 @@
   align-self: start;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 .card-titulo {
@@ -104,6 +104,7 @@
   align-items: center;
   gap: 16px;
   margin-top: 24px;
+  margin-bottom: 40px;
   margin-left: auto;
   animation: slideUp 0.8s ease-out backwards;
   animation-delay: 0.8s;
