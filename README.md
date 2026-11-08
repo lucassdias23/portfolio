@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://lucassdias23.github.io/portfolio/" target="_blank">🔗 Visitar Portfólio Online</a>
+  <a href="https://lucasdiasdev.vercel.app" target="_blank">🔗 Visitar Portfólio Online</a>
 </p>
 
 ---
