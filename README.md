@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <strong>Desenvolvedor Front-End Júnior</strong><br>
+  <strong>Desenvolvedor Júnior - Full Stack</strong><br>
   Interface moderna, código limpo, totalmente responsivo e otimizado para performance.
 </p>
 
