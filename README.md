@@ -37,14 +37,14 @@ O projeto foi construído utilizando tecnologias modernas de desenvolvimento web
 
 ## 📱 Funcionalidades em Destaque
 
-- **Design 100% Responsivo:** Interface milimetricamente ajustada para desktops, tablets e smartphones.
+- **Design 100% Responsivo:** Interface ajustada para desktops, tablets e smartphones.
 - **Menu Mobile:** Navegação fluida via menu hamburger interativo no mobile.
 - **Seções Estruturadas:**
   - **Sobre:** Introdução profissional e objetivos.
   - **Experiência:** Linha do tempo de atuação profissional.
-  - **Formação:** Cursos acadêmicos, stacks estudadas e credenciais de autenticidade linkadas diretamente à Origamid.
-  - **Projetos:** Galeria de projetos desenvolvidos, com controle visual de status (_Concluído_ / _Em Andamento_ / _Em Breve_) e links diretos para repositórios e deploys.
-  - **Contato:** Cards simétricos de ação rápida para e-mail e redes sociais.
+  - **Formação:** Cursos acadêmicos, stacks estudadas e credenciais de autenticidade linkadas.
+  - **Projetos:** Galeria de projetos desenvolvidos com links diretos para repositórios e deploys.
+  - **Contato:** Cards de ação rápida para meios de contato (e-mail e redes sociais).
 
 ---
 
@@ -56,5 +56,5 @@ No portfólio você encontrará os seguintes projetos de destaque:
 2.  **Animais Fantásticos:** Interface interativa com manipulação avançada de DOM (JS ES6).
 3.  **Dogs:** Rede social completa inspirada no Instagram (React).
 4.  **Wildbeast:** Enciclopédia digital assíncrona focada em CSS Grid Layout.
-5.  **Flexblog:** Layout de blog responsivo estruturado puramente com Flexbox.
+5.  **Flexblog:** Layout de blog responsivo estruturado puramente com CSS Flexbox.
 6.  **Forest:** Site institucional de uma pousada, feita com o Framework TailwindCSS.
